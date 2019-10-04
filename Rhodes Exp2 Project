@@ -1,0 +1,16 @@
+#check for a list, raise error if not, then look for and count positive numbers
+def Exp2(numbers):
+    if type(numbers) != list:
+        raise TypeError("Not a list!")
+        #iterate through list and count positive numbers
+    x = 0
+    for element in numbers:
+        if element >= 0:
+            x += 1
+            print x
+
+#Check lists with positive and negatives, check non-list, check string
+Exp2([5, 6, 8, 0, -1])
+Exp2([1, 2, 3, -12])
+Exp2(2)
+Exp2(['Hello world', 'Check'])
